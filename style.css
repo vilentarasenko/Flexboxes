@@ -1,0 +1,39 @@
+body{
+    margin-bottom: 0;
+}
+.brick-layout {
+    width: 400px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brick {
+    min-height: 80px;
+    min-width: 60px;
+    margin: 4px;
+    flex-basis: 100px;
+}
+
+.brick:nth-child(2n){
+    flex-grow: 1;
+}
+
+.color-black{
+    justify-items: start;
+    background-color: black;
+
+}
+
+.color-yellow{
+    justify-items: center;
+    background-color: yellow;
+}
+
+.color-black{
+    justify-items: end;
+    background-color: black;
+}
